@@ -527,7 +527,7 @@
 
 #### 46. If you want your kubernetes command to have a scope of ALL namespaces, how do you do that?
 
-    Answer: add -A to the command
+    Answer: add -A to the command ()
 
 ## .
 
@@ -760,6 +760,8 @@
                AND sends commands to etcd.
              On the master node, the file that has these configs is at : /etc/kubernetes/manifests/etcd.yaml
              That file in turn , points to the 2 cert files and 1 key file.
+             or 
+             with the help of 2 certificate and 1 key we can communicate with etcd cluster  
 
 ## .
 
