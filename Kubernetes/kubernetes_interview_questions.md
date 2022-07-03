@@ -2,7 +2,7 @@
 
 # ................... 284 Kubernetes Interview Questions  ....................
 
-## By  Mamun Rashid :: https://www.linkedin.com/in/mamunrashid/ 
+## By  Piyush Chopde :: www.linkedin.com/in/piyush-chopde 
 
 ### Last Updated: 2022.05.07
 
@@ -150,7 +150,7 @@
 #### 10.   If a container keeps crashing, how do you troubleshoot?
 
     Answer: You can use --previous option with logs command to see the logs of a crashed container.
-
+            (kubectl logs --previous )    
 ## .
 
 
