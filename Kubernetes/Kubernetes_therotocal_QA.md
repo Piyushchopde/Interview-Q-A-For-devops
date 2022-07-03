@@ -152,7 +152,8 @@ Node affinity is a set of rules used by the scheduler to determine where a pod 
 What is static Pod?
 Static Pods are managed directly by the kubelet daemon on a specific node, without the API server observing them.
 
-
+Why do you need certificates in Kubernetes, anyware?
+Ans: the API server won't talk to you , if you don't have a signed client certificate. So, any client who wants to do ANYTHING with the API server (e.g. even kubectl) better have a signed certificate!
 
 
 
