@@ -25,29 +25,29 @@ Node (worker) components:
 
 - kube-proxy - a proxy service that runs on each worker node to deal with individual host subnetting and expose services to the external world. It performs request forwarding to the correct pods/containers across the various isolated networks in a cluster.
 
-Kubectl
+(4) Kubectl
 kubectl command is a line tool that interacts with kube-apiserver and send commands to the master node. Each command is converted into an API call.
 
-Pod - one or more containers that should be controlled as a single application.
+(5) Pod - one or more containers that should be controlled as a single application.
 
 
 
-Deployment – it provides declarative updates to applications, a deployment allows youto describe an application’s life cycle, such as which images to use for the app, the number of pods there should be, and the way in which they should be updated.
+(6) Deployment – it provides declarative updates to applications, a deployment allows youto describe an application’s life cycle, such as which images to use for the app, the number of pods there should be, and the way in which they should be updated.
 
-Service – Allows you to dynamically access a group of replica Pods via IP and Port from your network and define name for the service.
+(7) Service – Allows you to dynamically access a group of replica Pods via IP and Port from your network and define name for the service.
 
-What is a Namespace?
+(8) What is a Namespace?
  Namespace as a virtual cluster inside your Kubernetes cluster. You can have multiple namespaces inside a single Kubernetes cluster, and they are all logically isolated from each other. 
 
-Secret - At the application level, Kubernetes secrets can store sensitive information (such as passwords, SSH keys, API keys or tokens) per cluster 
+(9) Secret - At the application level, Kubernetes secrets can store sensitive information (such as passwords, SSH keys, API keys or tokens) per cluster 
 
-CoreDNS - CoreDNS is a flexible, extensible DNS server that can serve as the Kubernetes cluster DNS. 
+(10) CoreDNS - CoreDNS is a flexible, extensible DNS server that can serve as the Kubernetes cluster DNS. 
 
-Node-Proxy - a proxy service that runs on each worker node to deal with individual host subnetting and expose services to the external world. It performs request forwarding to the correct pods/containers across the various isolated networks in a cluster.
+(11) Node-Proxy - a proxy service that runs on each worker node to deal with individual host subnetting and expose services to the external world. It performs request forwarding to the correct pods/containers across the various isolated networks in a cluster.
 
-Replica Set & Deployment - A ReplicaSet is a set of Pod templates that describes a set of Pod replicas. It uses a template that describes what each Pod must contain.
+(12) Replica Set & Deployment - A ReplicaSet is a set of Pod templates that describes a set of Pod replicas. It uses a template that describes what each Pod must contain.
 
-Daemon Set - 
+(13) Daemon Set - 
 Deamon set are like replica set its helps you deploy multiple instance of pods but its run one copy of your pod each node in cluster whenever new node is add  to the cluster the replica of the pod  automatically add to the node when node is remove the pod will automatically remove deamon set insure one copy of pod alway present in cluster.
 
 Why use DaemonSets?
@@ -57,9 +57,9 @@ To run a daemon for node monitoring on ever note, such as: collectd
 
 
 
-Label - Labels are key/value pairs that are attached to Kubernetes objects, such as pods,services
+(14) Label - Labels are key/value pairs that are attached to Kubernetes objects, such as pods,services
 
-Taints: are used to repel Pods from specific nodes. This is quite similar to the node anti-affinity  Instead of applying the label to a node, we apply a taint that tells a scheduler to repel Pods from this node if it does not match the taint. Only those Pods that have a toleration for the taint can be let into the node with that taint.
+(15) Taints: are used to repel Pods from specific nodes. This is quite similar to the node anti-affinity  Instead of applying the label to a node, we apply a taint that tells a scheduler to repel Pods from this node if it does not match the taint. Only those Pods that have a toleration for the taint can be let into the node with that taint.
 There are 3 taint effect
 NoSchedule
 PerferNoSchedule
@@ -76,39 +76,39 @@ tolerations:
 
 
 
-Meaing V1 and apps/v1
+(16) Meaing V1 and apps/v1
 v1
 This was the first stable release of the Kubernetes API. It contains many core objects.
 apps/v1
 apps is the most common API group in Kubernetes, with many core objects being drawnfrom it and v1. It includes functionality related to running applications on Kubernetes,like Deployments, RollingUpdates, and ReplicaSets.
 
-Service types:
+(17) Service types:
 Cluster IP - It is the default kubernetes service used for internal communication within the cluster.
 NodePort - It will open a ports on each nodes and traffic will be forwarded to the service through random port. And I can access the service (Pod) with the node IP + Defined port.You can only use ports 30000–32767
 LoadBalancer - It is a type that forwards all external traffic to a service through this type. And I can access the service (Pod) with the node name only.
 External Name - it is a type used to access a service internally that is hosted outside cluster through DNS CName or A record...
 
-Volume - similar to a container volume in Docker, but a Kubernetes volume applies to a whole pod and is mounted on all containers in the pod. Kubernetes guarantees data is preserved across container restarts. The volume will be removed only when the pod gets destroyed. Also, a pod can have multiple volumes
+(18) Volume - similar to a container volume in Docker, but a Kubernetes volume applies to a whole pod and is mounted on all containers in the pod. Kubernetes guarantees data is preserved across container restarts. The volume will be removed only when the pod gets destroyed. Also, a pod can have multiple volumes
 
-Persistent volume (PV):
+(19) Persistent volume (PV):
 Persistent Volume is a solution to store data of our containers permanently even after the pods got deleted.
 
-Persistent volume claim (PVC)
+(20) Persistent volume claim (PVC)
 A Persistent Volume Claim (PVC) is a claim request for some storage space by users.
 Persistent Volume supports three types of Reclaim Policy
  Retain
  Delete
  Recycle
 	
-Persistent Volume supports three types of access modes
+(21) Persistent Volume supports three types of access modes
  ReadWriteOnce
  ReadOnlyMany
  ReadWriteMany
 
-What is Kubernetes Volumes?
+(22) What is Kubernetes Volumes?
 Kubernetes Volumes are used to store data that should be accessible across all your containers running in a pod based on the requirement.
 
-What are the types of Kubernetes Volumes?
+(23) What are the types of Kubernetes Volumes?
 Kubernetes supports many kind of storage types, these are determined by how it is created and assigned to pods.
 Local Node Types - emptyDIR, hostpath, local
 File Sharing types - nfs
@@ -126,12 +126,12 @@ Note:
 
 
 
-CRI: ( Container Runtime Interface )
+(24) CRI: ( Container Runtime Interface )
 The CRI is a plugin interface which enables the kubelet to use a wide variety of container runtimes, without having a need to recompile the cluster components.
 You need a working container runtime on each Node in your cluster, so that the kubelet can launch Pods and their containers.
 The Container Runtime Interface (CRI) is the main protocol for the communication between the kubelet and Container Runtime.
 
-ConfigMaps
+(25) ConfigMaps
 A ConfigMap is an API object used to store non-confidential data in key-value pairs. Pods can consume ConfigMaps as environment variables, command-line arguments, or as configuration files in a volume.
 A ConfigMap allows you to decouple environment-specific configuration from your container images, so that your applications are easily portable.
 A ConfigMap is not designed to hold large chunks of data. The data stored in a ConfigMap cannot exceed 1 MiB. If you need to store settings that are larger than this limit, you may want to consider mounting a volume or use a separate database or file service.
@@ -158,14 +158,80 @@ Ans: the API server won't talk to you , if you don't have a signed client certif
 Why is important to keep etcd secure and encrypted?
  Answer: etcd data store all your Kubernetes data including Kubernetes secrets
 
+What is the idea behind "Security Context" ?
+ Answer: Security Context is what level of permissions we give the container as it runs. BY default, it runs with UID 0, which is potentially bad. Be using runAsUser, runAsGroup and fsGroup, 
+   we can limit what can the container do on the host. This is "Security Context"
 
+ What is the difference between a label and selector?
+Labels are basically tags. Selectors use key-value pairs to pick out objects (e.g. pods) to work on.
 
+What is a network policy in Kubernetes?
+ Answer: A network policy is equivalent to a Security Group in AWS. You define who can talk to who via network policy.
+
+ When do maxSurge and maxUnavailable come in to play?
+Answer: In Rolling Updates of Deployments.
+        maxSurge tells Kubernetes how many (or percent) extra pods it can create during rolling update.
+        mxUnavailable tells Kubernetes how many (or percent) pods can be unavailable during the rolling uodate.
+
+Why do we need HPA when we already have maxSurge and maxUnavailable?
+Answer: HPA is an autoscaling thing. maxSurge and maxUnavailable only apply during rolling updates.
+
+Difference between Service Port and Target Port?
+ Answer: Service Port is where users come to get the micro-service. Target Port is the port of the container/pod where the application listens and exposes. 
+
+How does Kubernetes do DNS interally?
+Ans: kube-system namespace has pod(pods) that DNS servers.You can see them by running: kubectl get po -A | grep dns
+
+You deploy an application to a GKE cluster by applying kubectl -f deployment.yaml. After deployment you check the pods status and see that the pods are in CrashLoopBack mode.
+      Outline the steps that you use to troubleshoot and the kubectl command you use to diagnose the problem.
+ Answer:
+   Step 1: run the describe pod command and read through events
+   Step 2: run the kubectl logs -p podname and see what is going on with pods (use --previous option, since pod has already crashed)
+
+What are annotations use for in Kubernetes and how are they different from labels and selectors
+ Answer:  Non-identifying metadata (e.g. contact info). Almost like comments You can't select based on annotations. You can select based on labels.
+
+What is port-forwarding?
+ Answer: You make a link between a port on your Mac or PC (localhost) and a port on a pod.
+         For example, pod is open on port 443. If you set up port-forward to you localhost port 4430, you can get to the web server on pod via https://localhost:4430
+
+What is the use case for node affinity vs nodeSelector?
+ Answer:
+   nodeSelector is simplistic based on labels whereas node affinity allows much more complex matching, soft-matching and un-matching.
+   nodeSelector use cases: pods belonging to a team go on the same node(s). Pods belonging to an environment (e.g. dev) go on the same node(s).
+   node affinity use cases: geographic location. Pods go on nodes where some pods live (OR do not live)
+
+ What is the difference between a daemonset and a deployment?
+ Answer: Sometimes there is a need to have some pods on EVERY node (e.g. DNS server or a log collector). One can deploy these ¿sets¿ as a daemon set on each node.
+         Deployment is a declarative definition of replicasets/pods. You define what needs to go on (how many, what type etc) and the deployment controller ensures that the "desired state" is always there.
+What are the benefits of the resource limits in Kubernetes ?
+Answer: This is the way to make sure the containers do not consume more resources than desired. This way, 2 things can happen: Runaway containers do no affect others We get alerted when resource increase over time does not reach a certain limit.
+What is the relationship between a Service and Endpoint?
+ Answer: When a client hits a Service, Service needs to know where to send the request to (much like a Load Balancer). It forwards it to an Endpoint.
+         When a Service is created based on a "match" with a pod (or pods), Kubernetes automatically creates an Endpoint to the pod's IP and port.
+         SERVICE ---> ENDPOINT (automaticlaly created) --> POD'S IP and PORT 
 Pod status:
-1) CrashLoopBackOff state 
-one of your pods is in a constant state of flux—one or more containers are failing and restarting repeatedly. This typically happens because each pod inherits a default restartPolicy of Always upon creation
+Answer:
+   ImagePullBackOff
+   : the docker image could not be gotten
+       Registry name is bad or not reachable
+       Docker image name is bad or image no longer exists
 
-2) Pending state
-If a Pod is stuck in Pending it means that it can not be scheduled onto a node. Generally this is because there are insufficient resources of one type or another that prevent scheduling
-3) 
+   CrashLoopBackOff
+   : container comes up and crashes/exists
+       Container has nothing to do, so it shuts down
+       Initial value of readiness probe is too small compared to what is needed by container¿s tasks
 
+   RunContainerError
+   : container could not be kicked off
+       Pod network solution is not working
+       Authorization Issues
 
+   Pods in Pending State
+   : waiting for scheduling for one reason or another
+       Not enough resources on node(s)
+       Worker node cannot reach master node
+   
+   Pods in a not Ready State
+   : pod has been scheduled, but it has not finished coming up for one reason or another
+       There is a readiness probe that's failing
