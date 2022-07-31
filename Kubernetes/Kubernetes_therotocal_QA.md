@@ -142,6 +142,8 @@ ConfigMap does not provide secrecy or encryption. If the data you want to store 
 Ingress:
 An API object that manages external access to the services in a cluster, typically HTTP.
 Ingress may provide load balancing, SSL termination and name-based virtual hosting.
+
+
 Node affinity:
 Node affinity is a set of rules used by the scheduler to determine where a pod can be placed. 
  There are two types of node affinity:
