@@ -1,0 +1,15 @@
+1) How to Make Multicloud connection (AWS and GCP) ?
+Ans : With the help of  site-to-site VPN we can do that 
+
+2) Which of the most encryption method in AWS ? 
+Ans : AES-256 we used for encrption method 
+
+3) Have you ever create IAM customize Policy in AWS  if yes can you explain senarios ?
+Ans :  Yes i have created cutomized inline policy during cross account access of S3 bucket 
+
+4) We have two Ec2 instance one in Production and One in staging enviroment how to migrate production ec2 instnace in staging Ec2 instance ?
+Ans :  
+      Step 1:Create a custom AMI from the instance that you want to use as the source account. Be sure to include all required EBS data volumes in the AMI. Be sure that the AMI doesn't have a static IP configuration, as this can result in connectivity issues.
+      Step 2:Share the AMI with the target account using either the Amazon EC2 console
+      Step 3: From the target account, find the AMI using the EC2 console or the AWS CLI
+      Step 4: Launch a new instance from the shared AMI on the target account. To import a key pair from a previous account, see Import your own public key to Amazon EC2. 
