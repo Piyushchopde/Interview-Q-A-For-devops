@@ -104,4 +104,24 @@ Ans: Yes we can Point
 31) what are the defult record you get when you create domain?
 Ans: Ns and SOA (start of authority )
 
-32) 
+32) What is RTO and RPO ? 
+Ans: RTO stands for Recovery Time Objective and is a measure of how quickly after an outage an application must be available again.
+     RPO, or Recovery Point Objective, refers to how much data loss your application can tolerate
+
+33) What is secure why to connect to AWS server from office network ?
+Ans: AWS Direct Connect enables you to securely connect your AWS environment to your on-premises data centre or office location over a standard 1Gb or 10Gb Ethernet fibre-optic connection.
+
+34) What is SCP in AWS ?
+Ans: Service control policies (SCPs) are a type of organization policy that you can use to manage permissions in your organization.
+
+35) what is presigned url ?
+Ans: allow user to access tmporery basis in that case our object always private 
+
+37) what is AWS direct connect and VPN ?
+Ans: VPN connectivity utilizes the public Internet, which can have unpredictable performance and despite being encrypted, can present security concerns. AWS Direct Connect bypasses the public Internet and establishes a secure, dedicated connection from your infrastructure into AWS.
+
+38) WHat is launch configuration ?
+ANs: instance configuration template that an Auto Scaling group uses to launch EC2 instances.
+
+39) Defaut DNS IP in AWS VPC?
+Ans: Ans: 10.0.0.0/20 10.0.0.2
