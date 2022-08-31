@@ -1,0 +1,34 @@
+1) What is Docker ?
+ans: docker is mechanisam which is used to created container; container is use to run application and they are completely isolated from each other 
+
+2) What is Docker image ?
+Ans : Docker image is template that we can used to run container 
+
+3) What is Docker container ? 
+Ans: COnatiner is running instance of docker image 
+
+4) What is DOcker hub ? 
+Ans: Docker hub is registry where we can store and Download docker images 
+
+5) How to run docker container ? 
+ Ans : Docker run -it imagename 
+ 
+6) How many contaiers we can run on host
+Ans: its totally depends upon host specification 
+
+7) What are network that are avaible bydefault ?
+  Ans: Default : 
+       Host
+       None: 
+8) Difference between Docker and VM ?
+ Ans : Docker is used host os and cpu 
+       VM need to allocated fix account of memory and CPU 
+9) WHy do my service 10 sec to recreate and stop ? 
+ANs: 
+
+10) How do i run multiple copys of compose file ? 
+Ans: 
+
+
+
+       
