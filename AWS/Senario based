@@ -125,3 +125,33 @@ ANs: instance configuration template that an Auto Scaling group uses to launch E
 
 39) Defaut DNS IP in AWS VPC?
 Ans: Ans: 10.0.0.0/20 10.0.0.2
+
+40) 5 aws s3 commands
+
+aws s3 mb s3://mubucket –region us-east-1
+aws s3 cp
+aws s3 ls
+aws s3 rm
+aws s3 mv 
+
+41) how to you protect data in rest in s3
+
+ans : with the help of AES-256 or AWS_KMS
+
+42) explain Elb and ALB and NLB
+
+Differnce between EBS vs EFS vs S3
+
+
+43) how to you monitor application http error responce running on aws (explain application run on ec2 vs elb )
+ans: we can create log group for the web application log and and create metric filer for http errors on top of the logs for explaim yoy find 404 error  then you can create filer and find that 
+
+44) aurora vs RDS 
+ aurora scale automatically and its much faster than other DB services and more read replica as compare to RDS 
+
+
+45) which senario do you used SQS 
+
+how can we send request to s3 ? 
+Ans : AWS SDK ,AWS REST API ,AWS Console and AWS CLI 
+
