@@ -224,6 +224,13 @@ Automated backups ,Manual backups which are known as snapshots.
 Q44) What is the difference between security groups and network access control list?
 Ans: -Security Group defind which traffic is allowed TO or FROM Ec2 Instance 
       -Where as  ACL  control at the subnet level,  The traffic allowd and deny  TO or FROM a Subnet
+      
+          ---> Network ACLs are applicable at the subnet level, so any instance in the subnet with an associated NACL will follow rules of NACL. That’s not the case with security groups, security groups has to be assigned explicitly to the instance.
+This means any instances within the subnet group gets the rule applied. With Security group, you have to manually assign a security group to the instances.
+          ---> State: Stateful or Stateless
+Security groups are stateful. This means any changes applied to an incoming rule will be automatically applied to the outgoing rule. e.g. If you allow an incoming port 80, the outgoing port 80 will be automatically opened.
+
+Network ACLs are stateless. This means any changes applied to an incoming rule will not be applied to the outgoing rule. e.g. If you allow an incoming port 80, you would also need to apply the rule for outgoing traffic.
 
 Q45) What are the types of load balancers in EC2?
 Answer: There are 3 types of load balancers,
