@@ -187,6 +187,8 @@
 
     Answer: Answer will depend on your use case. One possible answer is to have Service accounts that do certain things within the cluster.
             By the way, RBAC in Kubernetes is just AWS IAM Policies and Bindings. In RBAC, you have subjects (who gets the permission), verbs (what can the subject actually do), and rolebinding (subject linking to roles) and roles.
+	    
+	    (Role-based access control (RBAC) is a method of restricting network access based on the roles of individual users within an enterprise. RBAC ensures employees access only information they need to do their jobs and prevents them from accessing information that doesn't pertain to them)
 
 
 ## .
@@ -1673,7 +1675,7 @@
        CrashLoopBackOff
        : container comes up and crashes/exists
 	       Container has nothing to do, so it shuts down
-	       Initial value of readiness probe is too small compared to what is needed by container¿s tasks
+	       Initial value of readiness probe is too small compared to what is needed by containerÂ¿s tasks
 
        RunContainerError
        : container could not be kicked off
@@ -1790,7 +1792,7 @@
 
 #### 164. What is the difference between a daemonset and a deployment?
 
-     Answer: Sometimes there is a need to have some pods on EVERY node (e.g. DNS server or a log collector). One can deploy these ¿sets¿ as a daemon set on each node.
+     Answer: Sometimes there is a need to have some pods on EVERY node (e.g. DNS server or a log collector). One can deploy these Â¿setsÂ¿ as a daemon set on each node.
              Deployment is a declarative definition of replicasets/pods. You define what needs to go on (how many, what type etc) and the deployment controller ensures that the "desired state" is always there.
 
 ## .
@@ -2919,7 +2921,7 @@
 
 #### 275. How to rotate your cluster credentials using gcloud CLI?
 
-     Answer:  gcloud containers cluster foo update ¿start-credentials-rotation
+     Answer:  gcloud containers cluster foo update Â¿start-credentials-rotation
 
 ## .
 
@@ -2977,7 +2979,7 @@
 
 ## ......
 
-#### 281. kublet receives it¿s work in the form of _______  ?
+#### 281. kublet receives itÂ¿s work in the form of _______  ?
 
      Answer: YAML
 
