@@ -1375,6 +1375,17 @@ You can use AES-256 and KMS to encrypt your data in S3. KMS is your Key Manageme
 to encrypt your data in S3.
 
 
+RDS: 
+    RDS is a Relational database service
+    Its managed by AWS 
+    Its Allow you to create a database in cloud and manage by AWS 
+        - Postgrey 
+        - Oracle 
+        - mysql 
+        - mariadb
+        - SQL Server
+Aurora : 
+          
 
 
 
