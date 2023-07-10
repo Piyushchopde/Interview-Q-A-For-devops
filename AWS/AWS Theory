@@ -12,7 +12,11 @@ Answer:Key-pairs are secure login information for your instances/virtual machine
 
 Q4) What is S3?
 Answer:
-S3 stand for simple storage service with a simple web interface to store and retrive any amount of data from any where on web 
+S3 stand for simple storage service with a simple web interface to store and retrive any amount of data from any where on the web
+   - Bucket name must be globally unique 
+   - S3 Service is a Global service and Bucket is created in Region
+   - You can use S3 Bucket for static Website hosting 
+   
 
 Q5) What are the pricing models for EC2instances?
 Answer:The different pricing model for EC2 instances are as below,
