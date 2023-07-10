@@ -293,10 +293,20 @@ Answer: Elastic IP address is used to connect the internet yes they are charged 
 
 
 Q57) One of my s3 is bucket is deleted but i need to restore is there any possible way?
-Answer: If versioning is enabled we can easily restore them
+Answer: If versioning is enabled we can quickly restore them
 
-Q58) When I try to launch an ec2 instance i am getting Service limit exceed, how to fix the issue?
-Answer: By default AWS offer service limit of 20 running instances per region, to fix the issue we need to contact AWS support to increase the limit based on the requirement
+Versioning: 
+        - You Can Version your file in S3
+        - It is enabled in a bucket level 
+        - Once you enable the version its not disabled its suspended 
+Amazon S3 Replication :
+        - S3 CRR (Cross Region Replication ): 
+          - For that You need to enable Versioning on both Bucket 
+        - S3 SRR (Same Region Replication ): 
+          - 
+
+Q58) When I try to launch an ec2 instance i am getting the Service limit exceed, how to fix the issue?
+Answer: By default AWS offers a service limit of 20 running instances per region, to fix the issue we need to contact AWS support to increase the limit based on the requirement
 
 Q59) I need to modify the ebs volumes in Linux and windows is it possible
 Answer: yes its possible from console use modify volumes in section give the size u need then
