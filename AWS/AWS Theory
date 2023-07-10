@@ -1378,14 +1378,30 @@ to encrypt your data in S3.
 RDS: 
     RDS is a Relational database service
     Its managed by AWS 
-    Its Allow you to create a database in cloud and manage by AWS 
+    It Allow you to create a database in the cloud and manage via AWS 
         - Postgrey 
         - Oracle 
-        - mysql 
-        - mariadb
+        - MySQL 
+        - MariaDB
         - SQL Server
-Aurora : 
-          
+        - Aurora : 
+
+Elastic Cache Database:
+ - This is an in-memory database with High Performance and Low latency 
+ - Its managed by Redis or Memcached
+
+DyanamoDB: 
+- Fully managed and highly Available with replication across 3 AZ
+- No SQL database 
+- its serverless database
+- its fast and consistent performance 
+- It's a key-value database
+DyanamoDB Accelerator:
+Fully managed in-memory database 
+
+
+
+
 
 
 
