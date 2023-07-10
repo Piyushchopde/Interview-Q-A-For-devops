@@ -57,7 +57,17 @@ There are components in
  Scaling Policy
  Auto-scaling groups 
  Launch Configuration.
+Launch Template 
 
+We have 2 types of AUto-scaling Strategies:
+1)  Manual Scaling means we need to edit ASG and add number of instances 
+2) Dyanamic SCaling :
+    a) Simple/ Step Scaling : 
+       - You can use Cloud Watch alram to triggered when utiliztion goes 80 percent 
+    b) target trekking Scaling: 
+       - If we want to average AGS CPU to stay in 40 Percent 
+    c) Scheduled Scaling: 
+       - Increasing Scing Capacity to 10 at 5 AM on Friday 
 Q11) What are reserved instances?
 Answer: Reserved instances are the instance that you can reserve a fixed capacity of EC2 instances. In reserved instances you will have to get into a contract of 1 year or 3 years.
 
