@@ -109,7 +109,9 @@ Answer: Following are the types of storage classes in S3,
   5) Amazon S3 One zone infrequent access 
   6) Amazon S3 Intelligent tearing
   7) Amazon S3 Glacier Deep Archive
-  8) S3 Outposts storage class
+  8) S3 Glacier Flexible Retrieval 
+
+
  
 Q19) What is the default storage class in S3?
 Answer: The default storage class in S3 in Standard frequently accessed.
