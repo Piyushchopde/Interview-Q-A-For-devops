@@ -1399,6 +1399,15 @@ DyanamoDB:
 DyanamoDB Accelerator:
 Fully managed in-memory database 
 
+======================================================
+ECS: 
+- AWS take care of start and stop instances 
+
+ECR: Elastic Container registry 
+- private docker regitry on AWS 
+- where we can store images 
+
+
 
 
 
