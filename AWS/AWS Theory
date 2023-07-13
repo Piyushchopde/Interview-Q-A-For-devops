@@ -1421,7 +1421,7 @@ Step 6: To get internet in a private subnet Ec2 instance we need to configure th
 Step 7: During the Creation of the NAT gateway you need to allocate an EIP address and NAT gateway allocated in the public subnet to get internet to a private subnet 
 Step 8 : Once the NAT gateway is created need to add in the route table then a Private SUbnet Ec2 instance able to get internet 
 Step 9: For VPC Peering you need to get the VPC ID of Another VPC after creating VPC peering still you're not able to ping another region/account VPC for that another vpc needs to accept your request and add a route in both VPC then its work  
-
+Step 10: For VPC peering both VPC CIDR should be different  
 
 
 
