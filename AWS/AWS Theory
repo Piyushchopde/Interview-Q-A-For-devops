@@ -1413,17 +1413,21 @@ ECR: Elastic Container registry
 
 VPC: 
 Steps: create VPC 
-Step 2: Automatically created a subnet
+Step 2: Automatically create a subnet
 Step 3: Create IG automatically IG is in detached mode you need to active it once it's active 
 Step 4: go to route and create one public route once the route is created edit then  add  0.0.0.0/0 in the route table and attach IG on it once the below process is done 
 Step 5: lunch instance in a private and public subnet. public subnet able to get internet and private subnet not able to get it 
 Step 6: To get internet in a private subnet Ec2 instance we need to configure the NAT gateway on 
 Step 7: During the Creation of the NAT gateway you need to allocate an EIP address and NAT gateway allocated in the public subnet to get internet to a private subnet 
-Step 8 : Once the NAT gateway is created need to add in the route table then a Private SUbnet Ec2 instance able to get internet 
+Step 8: Once the NAT gateway is created need to add in the route table then a Private SUbnet Ec2 instance able to get internet 
 Step 9: For VPC Peering you need to get the VPC ID of Another VPC after creating VPC peering still you're not able to ping another region/account VPC for that another vpc needs to accept your request and add a route in both VPC then its work  
-Step 10: For VPC peering both VPC CIDR should be different  
+Step 10: For VPC peering both VPC CIDR should be different
 
-
+Launch RDS in the Private subnet and allow access to Ec2 instance in the private and public subnet 
+Basic Requriment is : 
+- Need at least 2 private subnets  with different availability zone
+- Then create a subnet group for 2 private VPC in a different zone 
+- select the private subnet that you have created 
 
 
 
