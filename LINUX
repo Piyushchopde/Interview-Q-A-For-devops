@@ -1,2 +1,5 @@
 I WANT TO GIVE PERMISSION TO SPECIFIC USER TO TAKE ACCESS OF ANOTHER LAPTOP DIRECTORY HOW CAN I DO THAT ?
 ANS: setfacl -m "u:user:permissions" /path/to/file
+
+
+https://testbook.com/interview/linux-lvm-interview-questions
