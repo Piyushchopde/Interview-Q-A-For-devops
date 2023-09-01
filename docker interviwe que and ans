@@ -1,34 +1,28 @@
-1) What is Docker ?
-ans: docker is mechanisam which is used to created container; container is use to run application and they are completely isolated from each other 
+WHAT IS DOCKER?
+Ans: Docker is a containerization platform that packages your application and all its dependencies together in the form of Containers to ensure that your application works seamlessly in any environment.
 
-2) What is Docker image ?
-Ans : Docker image is template that we can used to run container 
+What is Docker container?
+Docker containers include the application and all of its dependencies, but share the kernel with other containers, running as isolated processes in user space on the host operating system
 
-3) What is Docker container ? 
-Ans: COnatiner is running instance of docker image 
+What is Docker Hub ?
+Docker hub is a cloud-based registry service which allows you to link to code repositories, build your images and test them, stores manually pushed images, and links to Docker cloud so you can deploy images to your hosts.
 
-4) What is DOcker hub ? 
-Ans: Docker hub is registry where we can store and Download docker images 
+What are Docker Images?
+Docker image is template that we can use to run container 
 
-5) How to run docker container ? 
- Ans : Docker run -it imagename 
- 
-6) How many contaiers we can run on host
-Ans: its totally depends upon host specification 
+What is Docker File ?
+With the help of the Dockerfile  Docker can build images automatically by reading the instructions from a file 
 
-7) What are network that are avaible bydefault ?
-  Ans: Default : 
-       Host
-       None: 
-8) Difference between Docker and VM ?
- Ans : Docker is used host os and cpu 
-       VM need to allocated fix account of memory and CPU 
-9) WHy do my service 10 sec to recreate and stop ? 
-ANs: 
+What Is Dangling Volumes ? 
+Since the point of volumes is to exist independent from containers, when a container is removed, a volume is not automatically removed at the same time. When a volume exists and is no longer connected to any containers, it's called a dangling volume
 
-10) How do i run multiple copys of compose file ? 
-Ans: 
+What is Docker-compose ?
+Docker Compose is a YAML file which contains details about the services, networks, and volumes for setting up the Docker application.
+
+What is a Docker Namespace ? 
+A namespace is one of the Linux features and an important concept of containers. Namespace adds a layer of isolation in containers. Docker provides various namespaces in order to stay portable and not affect the underlying host system. Few namespace types supported by Docker – PID, Mount, IPC, User, Network 
 
 
-
+What is Docker Machine?
+Docker machine is a tool that lets you install Docker Engine on virtual hosts. These hosts can now be managed using the docker-machine commands. Docker machine also lets you provision Docker Swarm Clusters.
        
