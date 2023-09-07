@@ -219,11 +219,9 @@ Answer:
        Registry name is bad or not reachable
        Docker image name is bad or image no longer exists
 
-   CrashLoopBackOff
-   : container comes up and crashes/exists
-       Container has nothing to do, so it shuts down
-       Initial value of readiness probe is too small compared to what is needed by container¿s tasks
+   CrashLoopBackOff:CrashLoopBackOff:
 
+    Application Crash: The application inside the pod crashes repeatedly upon startup.
    RunContainerError
    : container could not be kicked off
        Pod network solution is not working
