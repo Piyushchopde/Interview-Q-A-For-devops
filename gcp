@@ -1,0 +1,11 @@
+Instance Group:
+  1) Managed Instance Group :
+   -  auto healing, auto scaling 
+   -  we can release new application version without downtime 
+             Rolling update and canary deployment 
+              Rolling Update: its update percentge of instances 
+              canary deployment : Test new version with group of instance before relseaing accross all instance 
+  2) Unmanaged Instance Group : 
+  - No autocaling, no auto healing 
+
+
