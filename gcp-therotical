@@ -7,3 +7,14 @@ Instance-Group
               statefull is use when you have database and dataprocessing related app with the help of that you can persist your data 
               stateless is use when you want to install and perform api related task
            there are any activity you can done during configuration of MIG like autoscaling auto healing , heltcheck , CPU utiliztion ,rooling update ,high avaiblity 
+
+Loadbalacer: loadbalancer used to distribute load 
+
+GCP has 3 types of load balacer 1) HTTP & HTTPS loadbalancer 2) TCP loadbalancer 3) UDP loadbalacer
+1) - support Internet-facing or internal ,Single- or multi-region
+   - 3 types of loadbalancer present 1) Global external application load balancer: 
+                                     2) Classic application load balancer
+                                     3) Regional external Application Load Balancer
+  
+2) Internet-facing or internal , Single- or multi-region
+3) Internet-facing or internal ,Single-region
