@@ -1,0 +1,9 @@
+Instance-Group 
+   - You can install group of instances using single entity called as Instance group 
+   - 2 types managed instance group and unmanaged instance group 
+        - manage instance group : support auto-scaling auto-healing loadbalaceing 
+          manage instance group has 2 types : 
+           - statefull and stateless
+              statefull is use when you have database and dataprocessing related app with the help of that you can persist your data 
+              stateless is use when you want to install and perform api related task
+           there are any activity you can done during configuration of MIG like autoscaling auto healing , heltcheck , CPU utiliztion ,rooling update ,high avaiblity 
