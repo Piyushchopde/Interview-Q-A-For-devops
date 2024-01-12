@@ -28,42 +28,21 @@ GCP has 3 types of load balacer 1) HTTP & HTTPS loadbalancer 2) TCP loadbalancer
 3) Internet-facing or internal ,Single-region
 
 
-
 GKE: standrad and autopilot mode 
 
-command Practice: 
-gcloud config set project my-kubernetes-project-304910
-gcloud container clusters get-credentials my-cluster --zone us-central1-c --project my-kubernetes-project-304910
-kubectl create deployment hello-world-rest-api --image=in28min/hello-world-rest-api:0.0.1.RELEASE
-kubectl get deployment
-kubectl expose deployment hello-world-rest-api --type=LoadBalancer --port=8080
-kubectl get services
-kubectl get services --watch
-curl 35.184.204.214:8080/hello-world
-kubectl scale deployment hello-world-rest-api --replicas=3
-gcloud container clusters resize my-cluster --node-pool default-pool --num-nodes=2 --zone=us-central1-c
-kubectl autoscale deployment hello-world-rest-api --max=4 --cpu-percent=70
-kubectl get hpa
-kubectl create configmap hello-world-config --from-literal=RDS_DB_NAME=todos
-kubectl get configmap
-kubectl describe configmap hello-world-config
-kubectl create secret generic hello-world-secrets-1 --from-literal=RDS_PASSWORD=dummytodos
-kubectl get secret
-kubectl describe secret hello-world-secrets-1
-kubectl apply -f deployment.yaml
-gcloud container node-pools list --zone=us-central1-c --cluster=my-cluster
-kubectl get pods -o wide
- 
-kubectl set image deployment hello-world-rest-api hello-world-rest-api=in28min/hello-world-rest-api:0.0.2.RELEASE
-kubectl get services
-kubectl get replicasets
-kubectl get pods
-kubectl delete pod hello-world-rest-api-58dc9d7fcc-8pv7r
- 
-kubectl scale deployment hello-world-rest-api --replicas=1
-kubectl get replicasets
-gcloud projects list
- 
-kubectl delete service hello-world-rest-api
-kubectl delete deployment hello-world-rest-api
-gcloud container clusters delete my-cluster --zone us-central1-c
+Google App Engine (GAE): simple way to deploy and scale your application in GCP
+- its supports Go,JAVA,Node.js,PHP,python,Ruby 
+- Automatic load balaceinga dn auto scaling 
+- Application Versioning 
+-Server less 
+
+2 Types of APP Engine Enviroments: 
+ standrad : Application run in langugage specific sandboxs
+          - Complete isolation from OS/Disk/Other Apps
+          - V1 : Jva,Python,PHP,Go (Old)
+          - V2: Java,Python,PHP,Node.js,Ruby,GO (NEWER Version)
+            new networks access and no restriction on languge extensions 
+Flexible  : Application instance run within the docker conatiners 
+         - Support Any runtime (with build in support for python, Java,Node,js,Go,Ruby,PHP)
+         - provide access to background processes and local disk 
+
