@@ -1,4 +1,4 @@
-Instance-Group 
+ Instance-Group 
    - You can install group of instances using single entity called as Instance group 
    - 2 types managed instance group and unmanaged instance group 
         - manage instance group : support auto-scaling: 3 number of autoscaling mode present 1) on 2) off 3) only-scale-out , auto-healing loadbalaceing 
@@ -46,3 +46,14 @@ Flexible  : Application instance run within the docker conatiners
          - Support Any runtime (with build in support for python, Java,Node,js,Go,Ruby,PHP)
          - provide access to background processes and local disk 
 
+
+ App Engine scaling :
+      - Automatic Scaling instance base up on the load 
+         - Autoscaling base up on: 
+                    - Target CPU Utiliztion : Configure CPU Use Threshold  
+                    - Throughput Utiliztion : 
+                    - Max concurrent request :
+         - Configure Max instances and Min Instances 
+      - Basic : Instance are created as when request they are reveived :    
+                   
+       -
