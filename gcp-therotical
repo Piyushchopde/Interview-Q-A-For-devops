@@ -63,6 +63,7 @@ Flexible  : Application instance run within the docker conatiners
                    
  Application Components in App Engine : 
 **  - Application: We can deploy One App engine per projects and in one APP engine we can deploy multiple microservices ** 
- 
+**  - If you want to create app engine in multiple region  then you need to create multipe projects **
+
 
 
