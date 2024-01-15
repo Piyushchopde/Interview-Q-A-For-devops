@@ -47,13 +47,22 @@ Flexible  : Application instance run within the docker conatiners
          - provide access to background processes and local disk 
 
 
- App Engine scaling :
+ App Engine scaling : 3 types of scaing instnaces in 1) Automatic 2) Basic 3) Manual  
       - Automatic Scaling instance base up on the load 
          - Autoscaling base up on: 
                     - Target CPU Utiliztion : Configure CPU Use Threshold  
                     - Throughput Utiliztion : 
                     - Max concurrent request :
          - Configure Max instances and Min Instances 
-      - Basic : Instance are created as when request they are reveived :    
+      - Basic : Instance are created as when request they are reveived :   
+                -  Recommened to adhoc workload 
+                - Instances are shutdown for zero workload 
+                - not support by app engine flexible enviroment 
+                - need to configure max instances and idle timeout 
+      - Manual : Configure spefici number of instance to run 
                    
-       -
+ Application Components in App Engine : 
+**  - Application: We can deploy One App engine per projects and in one APP engine we can deploy multiple microservices ** 
+ 
+
+
