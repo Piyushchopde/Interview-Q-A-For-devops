@@ -65,5 +65,16 @@ Flexible  : Application instance run within the docker conatiners
 **  - Application: We can deploy One App engine per projects and in one APP engine we can deploy multiple microservices ** 
 **  - If you want to create app engine in multiple region  then you need to create multipe projects **
 
+Split traffice between multiple version :
+   - we can split traffice using many ways :
+        - IP Splitting : base on request IP address 
+           - IP address can change causing accuray issuse 
+        - Cookie splitting : cooki can controled from your application Cookie splitting accuretly assign your to version 
+        - Random Splitting  
+
+** dispatch.yaml file user to override routing rule 
+** queue.yaml file used to managed task queue 
+** app engine flexibal will not scale down to zero  app engine standard will scale down to zero 
+** App Engine is region specific you cannot chnage there region once you deploy it 
 
 
