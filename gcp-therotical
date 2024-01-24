@@ -82,6 +82,7 @@ Split traffice between multiple version :
 
 Cloud Functions: 
 Google cloud function is light weight event-base asyncronus compute soluation that allow you to create small and single purpose function 
+Has 2 Version : 1st gen and 2nd gen 
 
 Cloud Run: 
    - Anthos is used to deploy services within sec its use for Kubenetes cluster 
