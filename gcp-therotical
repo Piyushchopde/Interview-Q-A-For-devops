@@ -124,10 +124,10 @@ Encrptions:
       - Data in use : Active data processed in a non-persistent state 
                       Data in RAM 
 
-  For encrption we use below argorithm:
-    -    Symmetric key encryption algorithm use the same key fo r encrption and decryption  
-    -     asymmetric key encrption algoritham has two key public key and private key 
-          - also called as public key crptiography 
+    For encrption we use below argorithm:
+      -    Symmetric key encryption algorithm use the same key fo r encrption and decryption  
+      -     asymmetric key encrption algoritham has two key public key and private key 
+           - also called as public key crptiography 
           - encrpty data with public key and decrpt data with private key 
 Cloud KMS:
        - Cloud KMS is use to craete and maganed crptograpic key 
@@ -138,6 +138,11 @@ Cloud KMS:
            - Cutomer-managed key: Use ey from KMS 
            - Cutomer-suppied key : Provide your own key 
 
+Perisitent Disks Snapshots: 
+           - Point-in-Time Snapshots of your persistent Disk 
+           - You can also schedule the snapshots 
+           - snapshots can be regional and multi-regional 
+           - snapshot are incremental 
         
 
 
