@@ -101,7 +101,15 @@ Block Storge:
 
              Types of Block Storge in GCP : 
               - Perisitent Disks: Networks Block Storge 
-              - Local SSDs: Present on Same host in Local Virual machine 
+                  - More Durable 
+                  - 3 Types: 
+                         - Standard 
+                         - Balanced
+                         - SSD
+              - Local SSDs:Local SSD are phycically attached with VM Instances
+                    - Its used to hold temp data 
+                    - Provide IOPS and low latency beacuse its attached directly to VM 
+                    - Cupport SCSI and NVME interface 
 File Storge : 
               -  File storge attached to multiple VM at same time
              Types of File   Storge in GCP : 
