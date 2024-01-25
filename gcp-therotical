@@ -7,7 +7,7 @@
               statefull is use when you have database and dataprocessing related app with the help of that you can persist your data 
               stateless is use when you want to install and perform api related task
            there are many activity you can done during configuration of MIG like autoscaling auto healing , heltcheck , CPU utiliztion ,rooling update ,high avaiblity 
-
+====================================================================********************======================================================================================
 Loadbalacer: loadbalancer used to distribute load 
 
 GCP has 3 types of load balacer 1) HTTP & HTTPS loadbalancer 2) TCP loadbalancer 3) UDP loadbalacer
@@ -27,9 +27,9 @@ GCP has 3 types of load balacer 1) HTTP & HTTPS loadbalancer 2) TCP loadbalancer
 2) Internet-facing or internal , Single- or multi-region
 3) Internet-facing or internal ,Single-region
 
-
+====================================================================********************======================================================================================
 GKE: standrad and autopilot mode 
-
+====================================================================********************======================================================================================
 Google App Engine (GAE): simple way to deploy and scale your application in GCP
 - its supports Go,JAVA,Node.js,PHP,python,Ruby 
 - Automatic load balaceinga dn auto scaling 
@@ -78,7 +78,7 @@ Split traffice between multiple version :
 ** App Engine is region specific you cannot chnage there region once you deploy it 
 
 
-
+====================================================================********************======================================================================================
 
 Cloud Functions: 
 Google cloud function is light weight event-base asyncronus compute soluation that allow you to create small and single purpose function 
@@ -90,3 +90,9 @@ Cloud Run:
    - Fully managed serverless flatform for containried applications 
        - Zero infrastrutre platform 
        - Fully managed end-to-end developer expriances
+
+====================================================================********************======================================================================================
+
+
+
+
