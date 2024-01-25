@@ -94,5 +94,31 @@ Cloud Run:
 ====================================================================********************======================================================================================
 
 
+Storage: 
+
+Encrptions: 
+    Data States: 
+      -  Data at Rest: Stored on a device or backup 
+                    data on the harddisk  in a database , backup or archive 
+      - Data in motion : being a trasforred across a networks 
+                     Also called as Data in transit 
+      - Data in use : Active data processed in a non-persistent state 
+                      Data in RAM 
+
+  For encrption we use below argorithm:
+    -    Symmetric key encryption algorithm use the same key fo r encrption and decryption  
+    -     asymmetric key encrption algoritham has two key public key and private key 
+          - also called as public key crptiography 
+          - encrpty data with public key and decrpt data with private key 
+Cloud KMS:
+       - Cloud KMS is use to craete and maganed crptograpic key 
+       - Control their used in your application keys and GCP service 
+       - use exsiting cryptoghay key created on on-premises 
+       - keys types : 
+           - Google-managed key : No COnfiguration requried 
+           - Cutomer-managed key: Use ey from KMS 
+           - Cutomer-suppied key : Provide your own key 
+
+        
 
 
