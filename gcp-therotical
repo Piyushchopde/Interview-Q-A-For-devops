@@ -145,4 +145,8 @@ Perisitent Disks Snapshots:
            - snapshot are incremental 
         
 
-
+Machine Images: 
+ - Similar as AMI in AWS 
+ - multiple disk can be attached (One boot and mulyiple data disks)
+ - machine image created by VM instances 
+ - 
