@@ -150,3 +150,16 @@ Machine Images:
  - multiple disk can be attached (One boot and mulyiple data disks)
  - machine image created by VM instances 
  - 
+
+
+
+
+
+
+
+IAM Roles: 
+  3 Types of Roles 
+   - Basic Roles 
+   - predefinded roles 
+   - custom roles: where predefind role are not sufficient you can create your own custome roles  
+
