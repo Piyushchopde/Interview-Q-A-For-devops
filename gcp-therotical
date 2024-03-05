@@ -153,7 +153,7 @@ Machine Images:
 
 
 
-
+==================================================================================================================================================================================
 
 
 
@@ -167,5 +167,12 @@ In custome role there are many stages:
               Alpha 
               beta 
               Genral avability  
-              
+
+
+Service Accounts : Service account use to provide access from one service to another service 
+Passowrd does not need they use key base soluation 
+during creation of Service Account we can add conditions depending upon that Time,Schedule,Day of week like that 
+
+** For provide permission to om-prime to cloud storge we need to go service account in that service account we need to add key 
+   for cretion of private key there are 2 option avaible P12 and JSON formate to athenticate my self            
 
