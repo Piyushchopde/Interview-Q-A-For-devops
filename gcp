@@ -95,3 +95,15 @@ gcloud app browse --service=my-first-service --version=20210215t075851
 gcloud app browse --version=v2
 gcloud app open-console --version=v2
 gcloud app versions list --hide-no-traffic
+
+
+
+
+IAM : 
+gcloud compute project-info describe
+gcloud auth list
+gcloud projects get-iam-policy glowing-furnace-304608
+gcloud projects add-iam-policy-binding glowing-furnace-304608 --member=user:in28minutes@gmail.com --role=roles/storage.objectAdmin
+gcloud projects remove-iam-policy-binding glowing-furnace-304608 --member=user:in28minutes@gmail.com --role=roles/storage.objectAdmin
+gcloud iam roles describe roles/storage.objectAdmin
+gcloud iam roles copy --source=roles/storage.objectAdmin --destination=my.custom.role --dest-project=glowing-furnace-304608
