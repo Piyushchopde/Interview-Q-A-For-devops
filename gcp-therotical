@@ -157,9 +157,15 @@ Machine Images:
 
 
 
-IAM Roles: 
+IAM Roles: first we need to create role assinge permission to that roles then we can bind role to member 
+member is also call as principle or identity 
   3 Types of Roles 
    - Basic Roles 
    - predefinded roles 
    - custom roles: where predefind role are not sufficient you can create your own custome roles  
+In custome role there are many stages:
+              Alpha 
+              beta 
+              Genral avability  
+              
 
