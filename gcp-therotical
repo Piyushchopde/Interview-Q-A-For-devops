@@ -152,7 +152,23 @@ Machine Images:
  - 
 
 
+**ACL: Access Control List 
+   How this is Different from IAM : 
+    - IAM Policy apply to all objects within a buckets 
+    - ACL can be use to customized specific access to different object 
 
+   ACL Access Control :
+       - Uniform 
+       - Fine-grained access : use of conbination of IAM and ACL 
+
+Cloud Storge: Signed URL 
+You would want to user to limited access to you object 
+
+
+
+Static Webside : 
+Condition: 
+Create Bucket name is same as website name then Copy file to bucket 
 ==================================================================================================================================================================================
 
 
@@ -175,4 +191,6 @@ during creation of Service Account we can add conditions depending upon that Tim
 
 ** For provide permission to om-prime to cloud storge we need to go service account in that service account we need to add key 
    for cretion of private key there are 2 option avaible P12 and JSON formate to athenticate my self            
+
+
 
