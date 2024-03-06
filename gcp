@@ -111,3 +111,30 @@ gcloud iam roles copy --source=roles/storage.objectAdmin --destination=my.custom
 
 Service account 
 gcloud iam service-accounts keys create 
+
+
+# Cloud SQL
+gcloud sql connect my-first-cloud-sql-instance --user=root --quiet
+gcloud config set project glowing-furnace-304608
+gcloud sql connect my-first-cloud-sql-instance --user=root --quiet
+use todos
+create table user (id integer, username varchar(30) );
+describe user;
+insert into user values (1, 'Ranga');
+select * from user;
+ 
+# Cloud Spanner
+CREATE TABLE Users (
+  UserId   INT64 NOT NULL,
+  UserName  STRING(1024)
+) PRIMARY KEY(UserId);
+ 
+ 
+# Cloud BigTable
+bq show bigquery-public-data:samples.shakespeare
+ gcloud --version
+cbt listinstances -project=glowing-furnace-304608
+echo project = glowing-furnace-304608 > ~/.cbtrc
+cat ~/.cbtrc
+cbt listinstances
+
