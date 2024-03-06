@@ -201,7 +201,7 @@ DATABASES:
                - Use SSD and HDD 
                - Use 416 GB RAM and 30 TB Data Storge 
                - Reduce your maintance cost 
-               
+               - ** FIrst You need to create Cloud SQL instnace in that instance you can create database 
           - Cloud Spanner: Unlimited scale and its is global applications with horizantal application 
        
     OLTP Databases: use ROW Storage
