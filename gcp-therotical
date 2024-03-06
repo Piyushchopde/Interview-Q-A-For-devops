@@ -197,16 +197,26 @@ during creation of Service Account we can add conditions depending upon that Tim
 DATABASES: 
     CGP managed services: 
           - Cloud SQL: Support PostgreSQL,MySQL and SQL Server for regional relational databases
+               - its regonal service 
+               - Use SSD and HDD 
+               - Use 416 GB RAM and 30 TB Data Storge 
+               - Reduce your maintance cost 
+               
           - Cloud Spanner: Unlimited scale and its is global applications with horizantal application 
-
+       
     OLTP Databases: use ROW Storage
         - Each table row is stored together 
         - Efficienr for Processing small transaction 
-    OLAP databases use columnar storage 
+    OLAP databases use columnar storage ex: BigQuery 
         - Each table column is Stored together 
         - High Compression - Store petabytes of data effiently 
         - Distribute data in multiple cluster Nodes  
         - Execute single quary across multiple nodes 
+
+    NOSQL:  
+         - Cloud datastore: Managed Serverless NOsql Document database 
+         - Cloud Big Table: Managed scalble NoSql wide Columndatabase (Not Serverless) , 10 terabytes of data 
+    In-Memory database:  Memory STore 
 
 
 
