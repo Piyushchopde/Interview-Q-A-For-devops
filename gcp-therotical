@@ -215,6 +215,7 @@ DATABASES:
 
     NOSQL:  
          - Cloud datastore: Managed Serverless NOsql Document database 
+             cloud firestore is next genration of datastore during creation of firestore store you will get native mode and datastore 1) native mode and datastore mode  
          - Cloud Big Table: Managed scalble NoSql wide Columndatabase (Not Serverless) , 10 terabytes of data 
     In-Memory database:  Memory STore 
 
