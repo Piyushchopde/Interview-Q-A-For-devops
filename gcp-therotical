@@ -202,7 +202,9 @@ DATABASES:
                - Use 416 GB RAM and 30 TB Data Storge 
                - Reduce your maintance cost 
                - ** FIrst You need to create Cloud SQL instnace in that instance you can create database 
+               - Donot Support Multi-region
           - Cloud Spanner: Unlimited scale and its is global applications with horizantal application 
+          - Support Multi-region
        
     OLTP Databases: use ROW Storage
         - Each table row is stored together 
@@ -216,9 +218,17 @@ DATABASES:
     NOSQL:  
          - Cloud datastore: Managed Serverless NOsql Document database 
              cloud firestore is next genration of datastore during creation of firestore store you will get native mode and datastore 1) native mode and datastore mode  
+               support  Multi-region
          - Cloud Big Table: Managed scalble NoSql wide Columndatabase (Not Serverless) , 10 terabytes of data 
+            -   Its PetaByt scale wide colum NOSQL DB (HBase API Compatible)
+            - Handal milions of read and write 
+            - single row transaction multiple transaction not support 
+            - Cannot export data using cloud console 
+            - Use CBT Command line toold to work with bigtable 
+      
     In-Memory database:  Memory STore 
 
 
 
 
+ 
