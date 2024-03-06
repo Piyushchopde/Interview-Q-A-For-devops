@@ -195,4 +195,19 @@ during creation of Service Account we can add conditions depending upon that Tim
 ===========================================================================================================================================================================================================
 
 DATABASES: 
-    - 
+    CGP managed services: 
+          - Cloud SQL: Support PostgreSQL,MySQL and SQL Server for regional relational databases
+          - Cloud Spanner: Unlimited scale and its is global applications with horizantal application 
+
+    OLTP Databases: use ROW Storage
+        - Each table row is stored together 
+        - Efficienr for Processing small transaction 
+    OLAP databases use columnar storage 
+        - Each table column is Stored together 
+        - High Compression - Store petabytes of data effiently 
+        - Distribute data in multiple cluster Nodes  
+        - Execute single quary across multiple nodes 
+
+
+
+
