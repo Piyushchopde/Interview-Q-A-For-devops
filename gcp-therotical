@@ -227,8 +227,16 @@ DATABASES:
             - Use CBT Command line toold to work with bigtable 
       
     In-Memory database:  Memory STore 
+                            - redis and memcached 
+  BigQuary : Exabyte scale modern datawarehousing soluation from GCP 
+             - 
 
-
+=========================================================================================================================================================
+VPC: 
+- VPC is global resource in GCP
+- Subnet is reginal 
+- 2 option for creating VPC automode AND custom mode 
+- 
 
 
  
