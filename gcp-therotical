@@ -192,5 +192,7 @@ during creation of Service Account we can add conditions depending upon that Tim
 ** For provide permission to om-prime to cloud storge we need to go service account in that service account we need to add key 
    for cretion of private key there are 2 option avaible P12 and JSON formate to athenticate my self            
 
+===========================================================================================================================================================================================================
 
-
+DATABASES: 
+    - 
