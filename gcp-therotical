@@ -254,4 +254,12 @@ Cloud COnnect:
 Direct Peering : 
    - Connect Customer Networks to google networks using network peering 
 
- 
+ =========================================================================================================================================================
+Cloud Monitoring : 
+-You can use cloud Morning to monitor one or more GCP projects and one or more AWS accounts 
+
+- cloud logging: 
+ real time log management and analysis tool 
+- Exabyte scale and ully managed service 
+
+        
