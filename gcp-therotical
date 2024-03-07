@@ -233,10 +233,25 @@ DATABASES:
 
 =========================================================================================================================================================
 VPC: 
-- VPC is global resource in GCP
-- Subnet is reginal 
-- 2 option for creating VPC automode AND custom mode 
-- 
+ - VPC is global resource in GCP
+ - Subnet is reginal 
+ - 2 option for creating VPC automode AND custom mode 
+ - VPC perring ca be happen with same project, different project and across project in different organization cat be peered  
+ - All communication is internal 
 
+Cloud VPN :
+ - Connect On-premise networks to GCP Networks
+ - Impement using IPSEC VPN 
+ - Traffic through Internet 
+ - Traffic encrpted using Internete Key exchange 
+ 2 Types of Cloud VPN Soluation: 
+    HA VPN (High Avaibilty VPN ): Support 2 External IP Address
+    Classic VPN  : Support Single External IP Address
+
+Cloud COnnect: 
+  - High Speed physical connection between on-prise and VPC Networks 
+
+Direct Peering : 
+   - Connect Customer Networks to google networks using network peering 
 
  
