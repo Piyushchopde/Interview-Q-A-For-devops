@@ -1,4 +1,12 @@
- Instance-Group 
+
+Compute Engine:
+  Genral Purpose 
+  memory optimized 
+  Compute Optimized 
+  Store Optiimized 
+
+=========================================================================================================================================
+Instance-Group 
    - You can install group of instances using single entity called as Instance group 
    - 2 types managed instance group and unmanaged instance group 
         - manage instance group : support auto-scaling: 3 number of autoscaling mode present 1) on 2) off 3) only-scale-out , auto-healing loadbalaceing 
