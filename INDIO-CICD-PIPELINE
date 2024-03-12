@@ -1,0 +1,21 @@
+we have java base application during creation of Cicd pipeline we decied to use jenkins sonarque and maven 
+
+- First we Set Up AWS Resources Create an IAM user with programmatic access and provide necessary permissions 
+       like AmazonS3FullAccess, AmazonEC2FullAccess, AWSLambda_FullAccess  
+- After that Create an S3 bucket to store build artifacts , then Set up other AWS resources like EC2 instances,  Lambda functions as needed for your project.
+-  can install Jenkins Server on Ec2 Instance from offical Website then Configure AWS Credentials in Jenkins
+  In Jenkins, i went to  "Manage Jenkins" > "Manage Credentials" > "Global credentials" > "Enter the Access Key ID and Secret Access Key of the IAM user created".
+- after that i Installed Required Jenkins Plugins: go to "Manage Jenkins" > "Manage Plugins" > "Available" tab 
+         AWS Pipeline Plugin
+         Pipeline Plugin
+         Git Plugin
+         Amazon EC2 Plugin
+- aftet create pipelin for source code management for that we create new job in pipeline section choose "Pipeline script from SCM" and
+        github and Enter the repository URL and credentials
+ using sonarqub we if found any bug on code send email to user code has bug again user recorrect this code and send to
+jenkins again sonarque check code quality and and send code to maven once all things are done maven build code and 
+send development server after that QA engineer verity all the code after manager approval code send to production server write cicd pipeline  
+
+
+
+- after that Create a Jenkinsfile in the root of project repository then Define stages for building, testing, and deploying your application using Groovy syntax
