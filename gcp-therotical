@@ -27,7 +27,7 @@ GCP has 3 types of load balacer 1) HTTP & HTTPS loadbalancer 2) TCP loadbalancer
      in frondend you need to add port which port you want request 
      in backend you need to select Instance group 
      in hostpath if you have multiple path to send request then you can use it 
-
+--- IN TCP Loadbalacer If you need SSL Offloading then you need to go with ssl proxy 
 - ssl offloading means: when send request its send to https loadbalacer after its trafer to http in instance group that called as ssl off loading 
 - ssl proxy is means : when usr send request to loadbalacer its convert as per requriment and send to host
 - ssl passthorugh: when user send request is directly send to host without chnaging anything 
