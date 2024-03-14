@@ -5,6 +5,11 @@ Compute Engine:
   Compute Optimized 
   Store Optiimized 
 
+
+Instnaces: 
+Preemptibal VM :  is equal to spot instances in AWS its also called as Stop instance in GCP 
+commited use discount : is equal to Reserved intance in AWS
+
 =========================================================================================================================================
 Instance-Group 
    - You can install group of instances using single entity called as Instance group 
