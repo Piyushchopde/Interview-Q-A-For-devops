@@ -35,7 +35,9 @@ GCP has 3 types of load balacer 1) HTTP & HTTPS loadbalancer 2) TCP loadbalancer
   
 2) Internet-facing or internal , Single- or multi-region
 3) Internet-facing or internal ,Single-region
-
+--- CPUs :if you have massive intensive workload application you need to use GCP related server
+---If you configure Live Migration inportent configuration Avaibility configuration  
+ 
 ====================================================================********************======================================================================================
 GKE: standrad and autopilot mode 
 ====================================================================********************======================================================================================
