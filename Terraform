@@ -3,3 +3,5 @@ State File: Terraform store the state of the infrastructure that is being create
 Desired State: Teraforrm primar function is to create ,modify and distory infrasture resources to match the desired state described i a terraforn configuration 
 current state: current state is a actual state 
 lock file: lock file allows us to a specific version of the provider  
+Attritutes: Attritutes are the field in a resource that hold the values that end up in state 
+cross referencng resource attribute : Terraform allow us to refernce the attribute of one resource to be used in a different resource 
