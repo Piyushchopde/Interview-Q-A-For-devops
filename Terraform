@@ -20,4 +20,9 @@ for_each function: if you use for_each function they do not use index they use u
 
 
 
+Provisioners: 
+
+local-exec and remote exec 
+
+
 
