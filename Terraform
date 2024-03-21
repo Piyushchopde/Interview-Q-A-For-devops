@@ -17,3 +17,7 @@ difference between above both is list can allow dublicate items where set items 
 count: when you use count using list [user1,user2,user2] its calculated as index [0,1,2]
 where if you add new user user0 in list section in 1 all index will be override you will get error 
 for_each function: if you use for_each function they do not use index they use username as index_key 
+
+
+
+
