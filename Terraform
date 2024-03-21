@@ -5,3 +5,4 @@ current state: current state is a actual state
 lock file: lock file allows us to a specific version of the provider  
 Attritutes: Attritutes are the field in a resource that hold the values that end up in state 
 cross referencng resource attribute : Terraform allow us to refernce the attribute of one resource to be used in a different resource 
+zipmap function construct a map from a list of keys and a correspoing list of values
