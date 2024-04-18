@@ -13,3 +13,8 @@
            - docker tag demo-repository:latest 908566580291.dkr.ecr.ca-central-1.amazonaws.com/demo-repository:latest
        4) once above operation done you can push image using
            - docker push 908566580291.dkr.ecr.ca-central-1.amazonaws.com/demo-repository:latest
+
+ 2) EKS : Elastic Kubernetes Service
+      - Managed service
+      - 
+      
