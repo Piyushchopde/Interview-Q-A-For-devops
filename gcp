@@ -1,8 +1,7 @@
 Gcloud:
 - Gcloud is command line interface that interact with  Google cloud resource 
    commands: 
-command to create custer gcloud conatiner create name 
-                         gcloud conatiner cluster get-credenatils name --zone --projects  
+
          gcloud config list project
          gcloud config configurations list
          gcloud config configurations activate my-default-configuration
@@ -33,6 +32,7 @@ command to create custer gcloud conatiner create name
 GKE Commands: 
       command Practice: 
 gcloud config set project my-kubernetes-project-304910
+gcloud container create name
 gcloud container clusters get-credentials my-cluster --zone us-central1-c --project my-kubernetes-project-304910
 kubectl create deployment hello-world-rest-api --image=in28min/hello-world-rest-api:0.0.1.RELEASE
 kubectl get deployment
