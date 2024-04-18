@@ -61,9 +61,9 @@ To run a daemon for node monitoring on ever note, such as: collectd
 
 (15) Taints: are used to repel Pods from specific nodes. This is quite similar to the node anti-affinity  Instead of applying the label to a node, we apply a taint that tells a scheduler to repel Pods from this node if it does not match the taint. Only those Pods that have a toleration for the taint can be let into the node with that taint.
 There are 3 taint effect
-NoSchedule
-PerferNoSchedule
-NoExecute
+- NoSchedule : No new Pods will be scheduled on the tainted node unless they have a matching toleration.
+- PerferNoSchedule: The control plane will try to avoid placing a Pod that does not tolerate the taint on the node, but it is not guaranteed.
+- NoExecute:Pods that do not tolerate the taint are evicted immediately
 
 Tolerations : are applied to pods, and allow the pods to schedule onto nodes with matching taints.
 Eq: 
