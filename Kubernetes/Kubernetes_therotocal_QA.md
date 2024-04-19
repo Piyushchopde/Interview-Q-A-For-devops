@@ -189,11 +189,17 @@ You deploy an application to a GKE cluster by applying kubectl -f deployment.yam
    Step 2: run the kubectl logs -p podname and see what is going on with pods (use --previous option, since pod has already crashed)
 
 What are annotations use for in Kubernetes and how are they different from labels and selectors
- Answer: In Kubernetes, annotation is metadata attached to Kubernetes objects. These annotations are key-value pairs used to add arbitrary non-identifying metadata to Kubernetes resources.
+ Answer: Annotations in Kubernetes (K8s) are metadata used to express additional information related to a resource or object.
 
 What is RBAC ?
-- Role-based access control (RBAC) is a method of restricting network access based on the roles of individual users 
-
+- Role-based access control (RBAC) is a method of restricting network access based on the roles of individual users
+- 
+What is  readiness: 
+- readiness probe is a Kubernetes health check, where you can set conditions that Kubernetes will use to determine if a container is ready to receive traffic
+- 
+What is liveness prob?
+- Liveness probes are used to determine whether a container is still running and functioning correctly. They check if the container is alive and responsive
+- 
 What is port-forwarding?
  Answer: You make a link between a port on your Mac or PC (localhost) and a port on a pod.
          For example, pod is open on port 443. If you set up port-forward to you localhost port 4430, you can get to the web server on pod via https://localhost:4430
