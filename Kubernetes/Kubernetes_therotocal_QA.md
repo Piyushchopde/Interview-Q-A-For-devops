@@ -139,49 +139,47 @@ ConfigMap does not provide secrecy or encryption. If the data you want to store 
 
 
 
-Ingress:
+26) Ingress:
 An API object that manages external access to the services in a cluster, typically HTTP.
 Ingress may provide load balancing, SSL termination and name-based virtual hosting.
 
 
 Node affinity:
-Node affinity is a set of rules used by the scheduler to determine where a pod can be placed. 
+27) Node affinity is a set of rules used by the scheduler to determine where a pod can be placed. 
  There are two types of node affinity:
     • requiredDuringSchedulingIgnoredDuringExecution: The scheduler can't schedule the Pod unless the rule is met. 
     • preferredDuringSchedulingIgnoredDuringExecution: The scheduler tries to find a node that meets the rule. If a matching node is not available, the scheduler still schedules the Pod.
 
 
-What is static Pod?
+28) What is static Pod?
 Static Pods are managed directly by the kubelet daemon on a specific node, without the API server observing them.
 
-Why do you need certificates in Kubernetes, anyware?
-Ans: the API server won't talk to you , if you don't have a signed client certificate. So, any client who wants to do ANYTHING with the API server (e.g. even kubectl) better have a signed certificate!
 
-Why is important to keep etcd secure and encrypted?
+
+29) Why is important to keep etcd secure and encrypted?
  Answer: etcd data store all your Kubernetes data including Kubernetes secrets
 
-What is the idea behind "Security Context" ?
+30) What is the idea behind "Security Context" ?
  Answer: Security Context is what level of permissions we give the container as it runs. BY default, it runs with UID 0, which is potentially bad. Be using runAsUser, runAsGroup and fsGroup, 
    we can limit what can the container do on the host. This is "Security Context"
 
- What is the difference between a label and selector?
+ 31) What is the difference between a label and selector?
 Labels are basically tags. Selectors use key-value pairs to pick out objects (e.g. pods) to work on.
 
-What is a network policy in Kubernetes?
+32) What is a network policy in Kubernetes?
  Answer: A network policy is equivalent to a Security Group in AWS. You define who can talk to who via network policy.
 
- When do maxSurge and maxUnavailable come in to play?
+ 33) When do maxSurge and maxUnavailable come in to play?
 Answer: In Rolling Updates of Deployments.
         maxSurge tells Kubernetes how many (or percent) extra pods it can create during rolling update.
         mxUnavailable tells Kubernetes how many (or percent) pods can be unavailable during the rolling uodate.
 
-Why do we need HPA when we already have maxSurge and maxUnavailable?
+34) Why do we need HPA when we already have maxSurge and maxUnavailable?
 Answer: HPA is an autoscaling thing. maxSurge and maxUnavailable only apply during rolling updates.
-
-Difference between Service Port and Target Port?
+35) Difference between Service Port and Target Port?
  Answer: Service Port is where users come to get the micro-service. Target Port is the port of the container/pod where the application listens and exposes. 
 
-How does Kubernetes do DNS interally?
+36) How does Kubernetes do DNS interally?
 Ans: kube-system namespace has pod(pods) that DNS servers.You can see them by running: kubectl get po -A | grep dns
 
 You deploy an application to a GKE cluster by applying kubectl -f deployment.yaml. After deployment you check the pods status and see that the pods are in CrashLoopBack mode.
@@ -192,6 +190,9 @@ You deploy an application to a GKE cluster by applying kubectl -f deployment.yam
 
 What are annotations use for in Kubernetes and how are they different from labels and selectors
  Answer:  Non-identifying metadata (e.g. contact info). Almost like comments You can't select based on annotations. You can select based on labels.
+
+What is RBAC ?
+- Role-based access control (RBAC) is a method of restricting network access based on the roles of individual users 
 
 What is port-forwarding?
  Answer: You make a link between a port on your Mac or PC (localhost) and a port on a pod.
