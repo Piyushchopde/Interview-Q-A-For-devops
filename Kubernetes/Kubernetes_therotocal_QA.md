@@ -189,7 +189,7 @@ You deploy an application to a GKE cluster by applying kubectl -f deployment.yam
    Step 2: run the kubectl logs -p podname and see what is going on with pods (use --previous option, since pod has already crashed)
 
 What are annotations use for in Kubernetes and how are they different from labels and selectors
- Answer:  Non-identifying metadata (e.g. contact info). Almost like comments You can't select based on annotations. You can select based on labels.
+ Answer: In Kubernetes, annotation is metadata attached to Kubernetes objects. These annotations are key-value pairs used to add arbitrary non-identifying metadata to Kubernetes resources.
 
 What is RBAC ?
 - Role-based access control (RBAC) is a method of restricting network access based on the roles of individual users 
