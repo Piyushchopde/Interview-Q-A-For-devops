@@ -213,26 +213,25 @@ What is the relationship between a Service and Endpoint?
  Answer: When a client hits a Service, Service needs to know where to send the request to (much like a Load Balancer). It forwards it to an Endpoint.
          When a Service is created based on a "match" with a pod (or pods), Kubernetes automatically creates an Endpoint to the pod's IP and port.
          SERVICE ---> ENDPOINT (automaticlaly created) --> POD'S IP and PORT 
+
+
 Pod status:
-Answer:
-   ImagePullBackOff
-   : the docker image could not be gotten
-       Registry name is bad or not reachable
-       Docker image name is bad or image no longer exists
+   1) ImagePullBackOff :
+      - the docker image could not be gotten
+      - Registry name is bad or not reachable
+      - Docker image name is bad or image no longer exists
 
-   CrashLoopBackOff:CrashLoopBackOff:
+  2) CrashLoopBackOff:CrashLoopBackOff:
+      -  Application Crash: The application inside the pod crashes repeatedly upon startup
+  3) RunContainerError: - container could not be kicked off
+       - Pod network solution is not working
+       - Authorization Issues
 
-    Application Crash: The application inside the pod crashes repeatedly upon startup.
-   RunContainerError
-   : container could not be kicked off
-       Pod network solution is not working
-       Authorization Issues
-
-   Pods in Pending State
-   : waiting for scheduling for one reason or another
-       Not enough resources on node(s)
-       Worker node cannot reach master node
+   Pods in Pending State:
+    - waiting for scheduling for one reason or another
+    -  Not enough resources on node(s)
+    - Worker node cannot reach master node
    
-   Pods in a not Ready State
-   : pod has been scheduled, but it has not finished coming up for one reason or another
-       There is a readiness probe that's failing
+   Pods in a not Ready State:
+    - pod has been scheduled, but it has not finished coming up for one reason or another
+    - There is a readiness probe that's failing
