@@ -96,9 +96,9 @@ Persistent Volume is a solution to store data of our containers permanently even
 (20) Persistent volume claim (PVC)
 A Persistent Volume Claim (PVC) is a claim request for some storage space by users.
 Persistent Volume supports three types of Reclaim Policy
- Retain
- Delete
- Recycle
+- Retain
+- Delete
+- Recycle
 	
 (21) Persistent Volume supports three types of access modes
  ReadWriteOnce
