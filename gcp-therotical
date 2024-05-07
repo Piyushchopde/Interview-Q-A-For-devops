@@ -305,6 +305,7 @@ Cloud NAT Gateway : Allow outbound traffice but restrict inbound traffic from ex
 - you can multiple cloud  NAT gateway in same VPC but  Each gateway is configurated for different subnets 
 - VM should not have Public IP if you use Cloud NAT Gateway 
 - During creation of NAT Gateway you need to create cloud Router and you will create cloud NAT gateway 
+- Externat IP should use for NAT Gateway
 
 Cloud VPN :
  - Connect On-premise networks to GCP Networks
