@@ -290,6 +290,12 @@ VPC:
  - 2 option for creating VPC automode AND custom mode 
  - VPC perring ca be happen with same project, different project and across project in different organization cat be peered  
  - All communication is internal 
+ - If you want to Connect 2 VPC that created using automode we cant connect it beacuse they have same network 10.128.0.0/9
+ - You can connect customize 2 VPC in different project or Organiztion using Peering conntion 
+ - subnet are regional resource we can create multiple subnet in region if we want
+ - Firewall and Route are working in Globle Service
+
+You Can connect to VPC Network using IAP(Idenitity Aware proxy ) privately 
 
 Cloud VPN :
  - Connect On-premise networks to GCP Networks
