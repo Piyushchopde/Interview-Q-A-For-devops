@@ -294,6 +294,9 @@ VPC:
  - You can connect customize 2 VPC in different project or Organiztion using Peering conntion 
  - subnet are regional resource we can create multiple subnet in region if we want
  - Firewall and Route are working in Globle Service
+ - VPC peering Request send from Both VPC 
+ - VPC networks support Only IPV4
+ - Peering is allowed shared VPC 
 
 You Can connect to VPC Network using IAP(Idenitity Aware proxy ) privately 
 
