@@ -306,6 +306,8 @@ Cloud NAT Gateway : Allow outbound traffice but restrict inbound traffic from ex
 - VM should not have Public IP if you use Cloud NAT Gateway 
 - During creation of NAT Gateway you need to create cloud Router and you will create cloud NAT gateway 
 - Externat IP should use for NAT Gateway
+- In Habrid Connectivity you will find cloud router option 
+- In Network Services you will find cloud NAT Gatway 
 
 Cloud VPN :
  - Connect On-premise networks to GCP Networks
